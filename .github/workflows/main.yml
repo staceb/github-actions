@@ -1,0 +1,23 @@
+name: CI
+
+on: [push]
+
+jobs:
+
+  linux:
+    name: linux
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - name: execute conda
+      run: |
+        conda
+
+  macos:
+    name: macos
+    runs-on: macOS-10.14
+    
+    steps:
+    - name: execute conda
+      run: |
+        conda
