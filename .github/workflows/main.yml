@@ -20,5 +20,6 @@ jobs:
     steps:
     - name: execute conda
       run: |
-        conda
         echo ::add-path::$CONDA/bin
+        conda
+        
