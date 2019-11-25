@@ -20,6 +20,6 @@ jobs:
     steps:
     - name: execute conda
       run: |
-        echo ::add-path::$CONDA/bin
+        export PATH=~/anaconda3/bin:$PATH
         conda
         
