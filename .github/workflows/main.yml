@@ -20,6 +20,6 @@ jobs:
     steps:
     - name: execute conda
       run: |
-        export PATH=~/anaconda3/bin:$PATH
+        source $HOME/anaconda/bin/activate
         conda
         
