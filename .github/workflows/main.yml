@@ -19,7 +19,8 @@ jobs:
     
     steps:
     - name: execute conda
+      env:
+        CONDA_PYTHON: ${{ matrix.anaconda }}
       run: |
-        source $HOME/anaconda/bin/activate
         conda
         
