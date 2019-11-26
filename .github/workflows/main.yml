@@ -19,8 +19,7 @@ jobs:
     
     steps:
     - name: execute conda
-      env:
-        CONDA_PYTHON: ${{ matrix.anaconda }}
       run: |
+        export PATH="/usr/share/miniconda/bin:$PATH"
         conda
         
