@@ -20,6 +20,6 @@ jobs:
     steps:
     - name: execute conda
       run: |
-        export PATH="/usr/share/miniconda/bin:$PATH"
+        echo '::set-env name=CONDA_EXEC::${CONDA}/bin/conda'
         conda
         
